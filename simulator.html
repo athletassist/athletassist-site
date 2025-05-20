@@ -16,6 +16,34 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="manifest" href="site.webmanifest">
+
+    <style>
+    /* Decision Simulator Styles */
+    #simulator-container {
+        background-color: var(--color-gray-9);
+        padding: var(--vspace-2);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        margin-top: var(--vspace-2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    #simulator-text {
+        font-size: var(--text-md);
+        line-height: var(--vspace-1_25);
+        color: var(--color-text-dark);
+        margin-bottom: var(--vspace-1_25);
+    }
+
+    #simulator-options {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    </style>
+
 </head>
 
 <body id="top">
@@ -59,9 +87,23 @@
       </p>
     </div>
   </div>
+<div class="row">
+  <div class="column xl-12">
+    <div id="simulator-container">
+      <div id="simulator-content">
+        <p id="simulator-text">
+          You’ve just finished a high-intensity training session. Your leg feels sore. What do you do?
+        </p>
 
-  
-</section>
+        <div id="simulator-options">
+          <button class="sim-btn" onclick="chooseOption('rest')">Take a rest day</button>
+          <button class="sim-btn" onclick="chooseOption('train')">Push through and train again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
         
@@ -141,6 +183,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/scenario.js"></script>  
     
 </body>
 </html>
