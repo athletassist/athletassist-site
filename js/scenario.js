@@ -1,10 +1,13 @@
 
 const scenarios = {
   "start": {
-    text: "You’ve just finished a high-intensity training session. Your leg feels sore. What do you do?",
+    text: "Pick A Sport To Start The Simulator",
     options: {
-      rest: "rest",
-      train: "train"
+      football: "Football",
+      baseball: "Baseball",
+      basketball: "Basketball"
+
+
     }
   },
   "rest": {
