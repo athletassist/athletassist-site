@@ -4457,7 +4457,7 @@ td:last-child {
     max-width: 414px;
     overflow: clip; /* More precise than hidden */
     border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.0);
     margin: auto;
 }
 
@@ -4468,7 +4468,7 @@ td:last-child {
 }
 
 .slider-shadow-wrapper {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.0);
     border-radius: 10px;
 }
 
