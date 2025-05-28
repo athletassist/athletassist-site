@@ -4298,12 +4298,12 @@ td:last-child {
 }
 
 .ss-copyright a {
-    color: var(--color-gray-5);
+    color: var(--color-gray-17);
 }
 
 .ss-copyright a:focus,
 .ss-copyright a:hover {
-    color: var(--color-1);
+    color: var(--color-gray-5);
 }
 
 .ss-copyright span {
