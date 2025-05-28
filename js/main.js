@@ -19,21 +19,21 @@
 
     html.classList.add('ss-preload');
 
-    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
         html.classList.remove('ss-preload');
         html.classList.add('ss-loaded');
 
-        // Allow CSS transitions to run before hiding
-        preloader.addEventListener('transitionend', function afterTransition(e) {
-            if (e.target.matches('#preloader'))  {
-                siteBody.classList.add('ss-show');
-                e.target.style.display = 'none';
-                preloader.removeEventListener(e.type, afterTransition);
-            }
-        });
+        if (preloader) {
+            // Add fade-out effect if desired
+            preloader.style.transition = 'opacity 0.5s ease-out';
+            preloader.style.opacity = 0;
 
-        // Trigger the transition manually if needed
-        preloader.classList.add('fade-out');
+            // Actually remove it after transition
+            setTimeout(() => {
+                preloader.style.display = 'none';
+                siteBody.classList.add('ss-show');
+            }, 500); // match the transition duration
+        }
     });
 };
  // end ssPreloader
