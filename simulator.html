@@ -43,13 +43,49 @@
         flex-wrap: wrap;
     }
 
-    #sim-btn{
+ @media only screen and (max-width: 768px) {
+  #simulator-container {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
     
-    }
+  }
 
-    #sim-btn :hover {
-        
-    }
+  #simulator-text {
+    font-size: 14px;
+  }
+
+  #simulator-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .sim-btn {
+    display: block;         /* allow to expand vertically */
+    width: 100%;            /* fill container horizontally */
+    box-sizing: border-box; /* include padding in width */
+    padding: 0.75rem 1rem;  /* enough vertical and horizontal padding */
+    text-align: center;     /* center the text */
+    white-space: normal;    /* allow text to wrap */
+    overflow-wrap: break-word; /* break long words if needed */
+    line-height: 1.4;       /* enough line height for readability */
+    flex: 1 1 auto;         /* allow buttons to grow if needed */
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+
+
 
     </style>
 
@@ -145,7 +181,6 @@
                             <h5>Contact Us</h5>
                             <ul class="link-list">
                                 <li><a href="mailto:info@athletassist.org">info@athletassist.org</a></li>
-                                <li><a href="tel:+1234567890">+123 456 7890</a></li>
                             </ul>
                         </div>
                     </div>
@@ -189,6 +224,8 @@
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scenario.js"></script>  
+
+    
     
 </body>
 </html>
