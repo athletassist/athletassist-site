@@ -10,7 +10,7 @@ const scenarios = {
 
 // Football Section Start
 "football": {
-  text: "It's Wednesday afternoon on a humid day. You're in your second year, but still trying to move from special teams to the main rotation. You've been logging high effort drills in Athletassist for days, and your hamstring has been tight since Monday. Today’s practice focuses on full-contact red zone reps.\n\nYou spot your position coach across the field, but he’s deep in conversation. There's no trainer on the field today.",
+  text: "It’s a humid Wednesday afternoon, You’re a second-year player, still fighting to make the main rotation. After days of high-effort drills, your hamstring is very tight. Today’s practice focuses on full-contact red zone reps. You see your position coach  across the field, but he’s deep in conversation. There’s no trainer on the field.",
   options: [
     { label: "Log updated soreness in Athletassist and adjust your reps yourself", target: "footballSelfManage" },
     { label: "Try to talk to a senior teammate about what to do", target: "footballAskTeammate" },
@@ -100,7 +100,7 @@ const scenarios = {
   // Basketball Section Start
 
  "basketball": {
-  text: "It’s Sunday and your club team is playing back-to-back games. The gym is packed, the energy is high, and you're coming off a 32-minute game yesterday. You’ve logged muscle fatigue and reaction delay into Athletassist. There's no coach input yet, and no trainer around.\n\nYour legs feel rubbery during warmups. You overhear your coach say everyone needs to go full-speed today.",
+  text: "It’s Sunday, and your club team has back-to-back games. The gym is packed and you’re coming off a long overtime game yesterday. You've logged muscle fatigue and reaction delay into Athletassist to stay prepared. The  warmups feel challenging, but you go all out, as you feel the pressure to perform",
   options: [
     { label: "Log the fatigue and review previous performance", target: "basketballLogData" },
     { label: "Ask your backup to be ready just in case", target: "basketballAskBackup" },
